@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Romana's Pizzaria</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff8f0;
+            color: #333;
+        }
+        header {
+            background-color: #c0392b;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        nav {
+            text-align: center;
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #c0392b;
+            font-weight: bold;
+        }
+        section {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+        h2 {
+            color: #c0392b;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            background-color: #fceae6;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        input, select, textarea {
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #c0392b;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            font-size: 1em;
+            cursor: pointer;
+        }
+        footer {
+            background-color: #c0392b;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Romana's Pizzaria</h1>
+        <p>Delícias servidas nos Jogos Escolares!</p>
+    </header>
+
+    <nav>
+        <a href="#sabores">Sabores</a>
+        <a href="#pedido">Fazer Pedido</a>
+        <a href="#info">Informações</a>
+    </nav>
+
+    <section id="sabores">
+        <h2>Sabores de Pizza - R$30,00 (grande)</h2>
+        <ul>
+            <li>Calabresa</li>
+            <li>Calemusse</li>
+            <li>Bauru</li>
+            <li>Frango com Catupiry</li>
+            <li>Frango com Cheddar</li>
+            <li>Milho</li>
+            <li>Brigadeiro</li>
+        </ul>
+    </section>
+
+    <section id="pedido">
+        <h2>Fazer Pedido</h2>
+        <form>
+            <input type="text" placeholder="Nome do cliente" required>
+            <input type="tel" placeholder="Celular (WhatsApp)" required>
+            <input type="text" placeholder="Endereço de entrega" required>
+            <select required>
+                <option value="">Forma de pagamento</option>
+                <option value="dinheiro">Dinheiro</option>
+                <option value="pix">Pix</option>
+                <option value="cartao">Cartão</option>
+            </select>
+            <button type="submit">Enviar Pedido</button>
+        </form>
+    </section>
+
+    <section id="info">
+        <h2>Informações</h2>
+        <p><strong>Funcionamento:</strong> Sexta e sábado, das 18h30 às 22h</p>
+        <p><strong>Entregamos até o endereço do cliente.</strong></p>
+    </section>
+
+    <footer>
+        &copy; 2025 Romana's Pizzaria - Todos os direitos reservados.
+    </footer>
+</body>
+</html>
